@@ -1,3 +1,5 @@
-class1,amount
-arraylist,120
-linkedlist,4
+show,amount
+myth,30000
+world,20000
+news,100000
+proSport,12300

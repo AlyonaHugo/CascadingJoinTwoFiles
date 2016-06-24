@@ -1,5 +1,3 @@
-package impatient;
-
 
 import cascading.flow.FlowProcess;
 import cascading.operation.BaseOperation;
@@ -20,16 +18,14 @@ public class ScrubFunction extends BaseOperation implements Function
     public void operate( FlowProcess flowProcess, FunctionCall functionCall )
     {
         TupleEntry argument = functionCall.getArguments();
-        String doc_id = argument.getString( 0 );
-        String token = scrubText( argument.getString( 1 ) );
-
-        if( token.length() > 0 )
-        {
-            Tuple result = new Tuple();
-            result.add( doc_id );
-            result.add( token );
-            functionCall.getOutputCollector().add( result );
-        }
+        String interface1 = argument.getString( 0 );
+        System.out.println("interface " + interface1 );
+        Integer amount = new Integer(argument.getString( 1 ));
+        System.out.println("amount " + amount);
+        Tuple result = new Tuple();
+        result.add( interface1 );
+        result.add( amount );
+        functionCall.getOutputCollector().add( result );
     }
 
     public String scrubText( String text )

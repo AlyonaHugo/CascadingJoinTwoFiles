@@ -1,3 +1,5 @@
-interface,class
-list,arraylist
-list,linkedlist
+channel,show
+discovery,myth
+discovery,world
+euronews,news
+sport,proSport
