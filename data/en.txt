@@ -1,0 +1,3 @@
+class1,amount
+arraylist,120
+linkedlist,4
